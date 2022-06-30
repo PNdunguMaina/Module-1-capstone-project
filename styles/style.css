@@ -262,6 +262,15 @@ h4 {
     list-style: none;
   }
 
+  .partners ul li {
+    list-style: none;
+    font-size: 40px;
+  }
+
+  .nav-menu li:first-child {
+    display: none;
+  }
+
   .top-nav .nav-items li:last-child {
     margin-right: 15px;
   }
@@ -291,10 +300,6 @@ h4 {
     cursor: pointer;
     color: #ec5242;
     font-size: 1.3rem;
-  }
-
-  .nav-menu li:first-child {
-    display: none;
   }
 
   #main-container {
@@ -399,11 +404,6 @@ h4 {
     margin-left: 10%;
     margin-right: 10%;
     padding-bottom: 24px;
-  }
-
-  .partners ul li {
-    list-style: none;
-    font-size: 40px;
   }
 
   .copyright {
