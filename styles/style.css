@@ -258,13 +258,13 @@ h4 {
     gap: 1rem;
   }
 
-  .top-nav .nav-items li {
-    list-style: none;
-  }
-
   .partners ul li {
     list-style: none;
     font-size: 40px;
+  }
+
+  .top-nav .nav-items li {
+    list-style: none;
   }
 
   .nav-menu li:first-child {
