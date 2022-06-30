@@ -1,7 +1,6 @@
 const artists = [
   {
-    photo:
-      '<img src="https://e-cdn-images.dzcdn.net/images/artist/28aeeda3e775f6e54781a2c40bc8efc8/264x264-000000-80-0-0.jpg" alt="Nyashinski photo" ',
+    photo: "./images/nyash.png",
     artistName: "Nyashinski",
     musicGenre: "pop, hiphop & R&B",
     aboutArtist:
@@ -9,8 +8,7 @@ const artists = [
   },
 
   {
-    photo:
-      '<img src="https://i.scdn.co/image/ab6761610000e5ebe0eff68f48a55bbf1035c9fd" alt="Mejja photo" ',
+    photo: "./images/khali.png",
     artistName: "Khaligraph Jones",
     musicGenre: "Rapper",
     aboutArtist:
@@ -18,8 +16,7 @@ const artists = [
   },
 
   {
-    photo:
-      '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Khaligraph_Jones.jpg/470px-Khaligraph_Jones.jpg" alt="Papa Jones photo" ',
+    photo: "./images/mejja.png",
     artistName: "Mejja",
     musicGenre: "Genge, afrobeats",
     aboutArtist:
@@ -27,8 +24,7 @@ const artists = [
   },
 
   {
-    photo:
-      '<img src="https://ralingo.com/wp-content/uploads/2019/09/otile-brown.png" alt="Otile Brown photo" ',
+    photo: "./images/otile.png",
     artistName: "Otile Brown",
     musicGenre: "R&B singer, songwriter, guitarist and actor.",
     aboutArtist:
@@ -36,8 +32,7 @@ const artists = [
   },
 
   {
-    photo:
-      '<img src="https://netstorage-tuko.akamaized.net/images/211a152002f9e450.png" alt="Nadia Mukami photo" ',
+    photo: "./images/nadia.png",
     artistName: "Nadia Mukami",
     musicGenre: "singer and songwriter",
     aboutArtist:
@@ -45,8 +40,7 @@ const artists = [
   },
 
   {
-    photo:
-      '<img src="https://i0.wp.com/www.natescrest.com/wp-content/uploads/2019/04/octopizzo.jpg?w=960&ssl=1" alt="Octopizzo photo"',
+    photo: "./images/octo.png",
     artistName: "Octopizzo",
     musicGenre: "Hip-hop Artist, Entrepreneur & Philanthropist.",
     aboutArtist:
@@ -55,18 +49,28 @@ const artists = [
 ];
 
 artists.forEach((artist) => {
-  const featuredAtists = document.getElementById("featured-artists");
+  const featuredArtists = document.getElementById("featured-artists");
+
+  const mainDiv = document.createElement("div");
+  mainDiv.className = "featured-artist";
+  featuredArtists.appendChild(mainDiv);
+
+  const divImg = document.createElement("div");
+  divImg.className = "featured-image";
+  mainDiv.appendChild(divImg);
+
   const artistImage = document.createElement("img");
   artistImage.className = "artist-img";
   artistImage.src = artist.photo;
-  featuredAtists.appendChild(artistImage);
+  artistImage.alt = "Featured artist";
+  divImg.appendChild(artistImage);
 
   const div = document.createElement("div");
   div.className = "artist-portfolio";
-  featuredAtists.appendChild(div);
+  mainDiv.appendChild(div);
 
-  const artistName = document.createElement("h2");
-  artistImage.className = "artist-name";
+  const artistName = document.createElement("h6");
+  artistName.className = "artist-name";
   artistName.textContent = artist.artistName;
   div.appendChild(artistName);
 

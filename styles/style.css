@@ -1,0 +1,426 @@
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
+@import url("http://fonts.cdnfonts.com/css/lato");
+
+* {
+  box-sizing: border-box;
+  inset: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: solid rgba(255, 253, 253, 0.808);
+}
+
+.top-nav {
+  display: none;
+}
+
+.hamburger.open {
+  display: none;
+}
+
+.fa-bars {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  color: #1a1b1b;
+  font-size: 3rem;
+}
+
+.bottom-nav i {
+  display: none;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.nav-menu.open {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "COCOGOOSE", sans-serif;
+  gap: 3rem;
+  background-color: rgba(255, 253, 253, 0.95);
+  z-index: 777;
+}
+
+.nav-link {
+  color: #ec5242;
+  background: #fff;
+}
+
+.nav-menu li:first-child {
+  position: absolute;
+  margin-left: 0.5rem;
+  margin-top: 0;
+  font-size: 3rem;
+  width: 20%;
+}
+
+#main-container {
+  font-family: "COCOGOOSE", sans-serif;
+  box-sizing: border-box;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ec5242;
+  margin: 1em 0;
+  padding: 0 20px;
+}
+
+h2 {
+  font-weight: 300;
+  margin: 0.5em 0;
+  font-size: 3rem;
+  text-align: left;
+  padding: 0 20px;
+  color: #ec5242;
+}
+
+.home-page {
+  background-color: rgba(255, 253, 253, 0.808);
+}
+
+.home-page h2 {
+  font-size: 3em;
+  color: #ec5242;
+}
+
+.home-page .context {
+  border: 2px solid white;
+  padding: 5px;
+  font-size: 0.8rem;
+  background-color: rgba(156, 141, 141, 0.082);
+  font-family: "COCOGOOSE", sans-serif;
+  color: rgba(22, 16, 16, 0.76);
+}
+
+.home-page h3 {
+  margin: 0;
+  color: rgba(236, 83, 66, 0.9607843137);
+  font-size: 1.5em;
+}
+
+.home-page .concert-snippet {
+  color: #ec5242;
+  font-size: 1em;
+}
+
+h4 {
+  font-family: "COCOGOOSE", sans-serif;
+  text-align: center;
+  color: white;
+  padding: 1.5rem;
+}
+
+.about-page {
+  background-image: url(../images/about-bg.jpg);
+  margin: 20px 0;
+}
+
+.card-wrapper {
+  margin: 0 5px;
+}
+
+.card-child {
+  display: flex;
+  align-items: center;
+  background-color: rgba(136, 128, 128, 0.295);
+  margin: 10px;
+}
+
+.card-child i {
+  font-size: 2.5rem;
+  margin: 15px 15px;
+  color: white;
+}
+
+.card-child span {
+  font-family: "COCOGOOSE", sans-serif;
+  text-align: center;
+  color: #ec5242;
+}
+
+.card-child small {
+  text-align: center;
+  padding: 0 1rem;
+  color: white;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3rem;
+}
+
+.btn {
+  background-color: #ec5242;
+  color: white;
+}
+
+.artists h5 {
+  color: rgba(0, 0, 0, 0.719);
+  text-align: center;
+}
+
+.artists hr {
+  margin: 10px 47% 40px 47%;
+  border: 3px solid #ec5242;
+}
+
+#featured-artists {
+  display: grid;
+}
+
+.featured-artist {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  left: 1.5rem;
+}
+
+.featured-image {
+  width: 40%;
+  height: 80px;
+  padding-left: 30px;
+  padding-top: 20px;
+  background-image: url("../images/chess.png");
+}
+
+.artist-name {
+  color: gray;
+}
+
+.music-genre {
+  color: #ec5242;
+  margin: 10px 0;
+}
+
+.about-artist {
+  color: gray;
+  font-size: 0.9em;
+}
+
+.more {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  background-color: rgba(136, 128, 128, 0.295);
+  margin-bottom: 3rem;
+}
+
+.more p {
+  margin-top: 20px;
+}
+
+.fa-chevron-down {
+  margin-left: 10px;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  * {
+    background-color: solid rgba(255, 253, 253, 0.808);
+  }
+
+  body {
+    height: 100vh;
+  }
+
+  .sm-screen {
+    display: none;
+  }
+
+  .top-nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1a1b1b;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-top: 0.7rem;
+    height: 60px;
+  }
+
+  .top-nav .nav-items {
+    color: #fff;
+    gap: 1rem;
+  }
+
+  .top-nav .nav-items li {
+    list-style: none;
+  }
+
+  .top-nav .nav-items li:last-child {
+    margin-right: 15px;
+  }
+
+  .bottom-nav i {
+    display: flex;
+    margin-left: 15%;
+    width: 10px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .nav-menu {
+    display: flex;
+    margin-right: 5%;
+    gap: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .nav-link {
+    color: #1a1b1b;
+    font-size: 1rem;
+  }
+
+  .nav-link:hover {
+    cursor: pointer;
+    color: #ec5242;
+    font-size: 1.3rem;
+  }
+
+  .nav-menu li:first-child {
+    display: none;
+  }
+
+  #main-container {
+    background-image: none;
+    background-color: solid #fff;
+  }
+
+  .home-page {
+    width: 50%;
+    margin-left: 15%;
+  }
+
+  .concert-snippet {
+    margin-top: 1.5rem;
+  }
+
+  .card-wrapper {
+    margin-left: 2%;
+  }
+
+  h4 {
+    padding-top: 1.5rem;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .card-child {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 5rem;
+  }
+
+  .card-child:hover {
+    border: 1px solid #fff;
+  }
+
+  .cards-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards-link a {
+    color: #fff;
+    margin-bottom: 2.5rem;
+  }
+
+  #featured-artists {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 15%;
+    margin-right: 15%;
+    -moz-column-gap: 1.5rem;
+    column-gap: 1.5rem;
+    row-gap: 36px;
+  }
+
+  .featured-image {
+    width: 40%;
+    height: 30%;
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+
+  .artist-portfolio {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .partners {
+    color: white;
+    background-color: rgba(22, 16, 16, 0.76);
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .partners h6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 24px;
+  }
+
+  .partners hr {
+    border: 0;
+    border-top: 3px solid red;
+    margin-left: 47%;
+    margin-right: 47%;
+  }
+
+  .partners ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 24px;
+  }
+
+  .partners ul li {
+    list-style: none;
+    font-size: 40px;
+  }
+
+  .copyright {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .copyright i {
+    width: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 45%;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .copyright-text {
+    margin-left: -20%;
+  }
+}
