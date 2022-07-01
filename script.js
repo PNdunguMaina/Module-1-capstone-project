@@ -2,7 +2,7 @@ const artists = [
   {
     photo: "./images/nyash.png",
     artistName: "Nyashinski",
-    musicGenre: "pop, hiphop & R&B",
+    musicGenre: "Pop, hiphop & R&B",
     aboutArtist:
       "He was one third of popular all-male Kenyan rap trio - Kleptomaniax - made up of Collins (Collo) and Robert (Roba), formed while still in high school. Kleptomaniax went on to release several singles including Haree to Tuendelee to their biggest hit Swing, and eventually their debut album titled “M4E” (Maniax 4Ever) in 2005.",
   },
@@ -76,8 +76,12 @@ artists.forEach((artist) => {
 
   const musicGenre = document.createElement("p");
   musicGenre.className = "music-genre";
-  musicGenre.textContent = artist.musicGenre;
   div.appendChild(musicGenre);
+
+  const italic = document.createElement("em");
+  italic.className = "music-genre";
+  italic.textContent = artist.musicGenre;
+  musicGenre.appendChild(italic);
 
   const aboutArtist = document.createElement("p");
   aboutArtist.className = "about-artist";
