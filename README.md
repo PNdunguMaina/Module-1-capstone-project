@@ -1,62 +1,45 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Live Music Concert
 
-> Description the project.
-
+This is the first Capstone project in the Microverse curriculum Module 1 program created based on the Design template by Cindy. The main aim is to showcase the technical and soft skills gained during module 1 of the Microverse program.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Languages: HTML, CSS, Javascript
+- Frameworks: Bootstrap
+- Technologies: Visual Studio code
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+Kindly click [Live Music Concert](https://pndungumaina.github.io/Module-1-capstone-project/) to access the online version
 
+[Watch this video](https://www.loom.com/share/68da15601e4f4237984fe7e304f635f2) to get an overview of the features included in this project.
 
-## Getting Started
+## To get a local copy up and running follow these simple example steps.
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+### step 1
 
+-[Click here](https://github.com/PNdunguMaina/Module-1-capstone-project) to get to my repository in Github.
+-Copy the link on the code button on the right (green in color).
+-Clone the link in your local folder
 
-To get a local copy up and running follow these simple example steps.
+### Step 2
 
-### Prerequisites
+- Navigate to the cloned project
+  -Open index.html file
 
-### Setup
+## Author
 
-### Install
+👤 **Patrick Maina**
 
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@PNdunguMaina](https://github.com/PNdunguMaina)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/PNdunguMaina/Module-1-capstone-project/issues).
 
 ## Show your support
 
@@ -64,10 +47,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+[Microverse] (https://www.microverse.org/)
+[Designer] - (https://www.behance.net/adagio07)
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is MIT licensed.

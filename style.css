@@ -1,0 +1,611 @@
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+@import url('http://fonts.cdnfonts.com/css/lato');
+
+* {
+  box-sizing: border-box;
+  inset: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: solid rgba(255, 253, 253, 0.808);
+}
+
+.top-nav {
+  display: none;
+}
+
+.hamburger.open {
+  display: none;
+}
+
+.fa-bars {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  color: #1a1b1b;
+  font-size: 3rem;
+}
+
+.bottom-nav {
+  display: none;
+}
+
+.nav-menu-m {
+  display: none;
+}
+
+.nav-menu-m.open {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  max-height: 500px;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'COCOGOOSE', sans-serif;
+  gap: 2rem;
+  background-color: rgba(255, 253, 253, 0.95);
+  z-index: 777;
+}
+
+.nav-link {
+  color: #ec5242;
+  background: #fff;
+}
+
+.partners ul li {
+  list-style: none;
+}
+
+.nav-menu-m li:first-child {
+  position: absolute;
+  margin-left: 0.5rem;
+  margin-top: 0;
+  font-size: 3rem;
+  width: 20%;
+}
+
+#main-container {
+  font-family: 'COCOGOOSE', sans-serif;
+  box-sizing: border-box;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ec5242;
+  margin: 1em 0;
+  padding: 0 20px;
+}
+
+h2 {
+  font-weight: 300;
+  margin: 0.5em 0;
+  font-size: 3rem;
+  text-align: left;
+  padding: 0 20px;
+  color: #ec5242;
+}
+
+.home-page {
+  background-color: rgba(255, 253, 253, 0.808);
+}
+
+.home-page h2 {
+  font-size: 3em;
+  color: #ec5242;
+}
+
+.home-page .context {
+  border: 2px solid white;
+  padding: 5px;
+  font-size: 0.8rem;
+  background-color: rgba(156, 141, 141, 0.082);
+  font-family: 'COCOGOOSE', sans-serif;
+  color: rgba(22, 16, 16, 0.76);
+}
+
+.home-page h3 {
+  margin: 0;
+  color: rgba(236, 83, 66, 0.9607843137);
+  font-size: 1.5em;
+}
+
+.home-page .concert-snippet {
+  color: #ec5242;
+  font-size: 1em;
+}
+
+h4 {
+  font-family: 'COCOGOOSE', sans-serif;
+  text-align: center;
+  color: white;
+  padding: 1.5rem;
+}
+
+.program-page {
+  background-image: url(../images/about-bg.jpg);
+  margin: 20px 0;
+}
+
+.card-child {
+  display: flex;
+  align-items: center;
+  background-color: rgba(136, 128, 128, 0.295);
+  margin: 10px;
+}
+
+.card-child i {
+  font-size: 2.5rem;
+  margin: 15px 15px;
+  color: white;
+}
+
+.card-child span {
+  font-family: 'COCOGOOSE', sans-serif;
+  text-align: center;
+  color: #ec5242;
+}
+
+.card-child small {
+  text-align: center;
+  padding: 0 1rem;
+  color: white;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3rem;
+}
+
+.btn {
+  background-color: #ec5242;
+  color: white;
+}
+
+/* featured artists section */
+.artists h5 {
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  font-weight: 600;
+}
+
+.artists hr {
+  margin: 10px 47% 40px 47%;
+  border: 2px solid #ec5242;
+}
+
+#featured-artists {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-artist {
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  height: auto;
+  display: flex;
+}
+
+.featured-image {
+  background-image: url('../images/chess.png');
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+.artist-portfolio {
+  left: 0;
+  padding: 1.5rem;
+}
+
+.artist-name {
+  color: black;
+}
+
+.music-genre {
+  color: #ec5242;
+  margin: 10px auto;
+}
+
+.about-artist {
+  color: gray;
+  font-size: 0.9em;
+}
+
+/* footer section */
+.more {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  background-color: rgba(136, 128, 128, 0.295);
+  margin-bottom: 3rem;
+}
+
+.more p {
+  margin-top: 20px;
+}
+
+.fa-chevron-down {
+  margin-left: 10px;
+}
+
+.desktop {
+  display: none;
+}
+
+.partners {
+  color: white;
+  background-color: rgba(22, 16, 16, 0.76);
+  margin: 60px 0;
+  padding-bottom: 20px;
+}
+
+.partners h6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  font-size: 24px;
+}
+
+.partners hr {
+  border-top: 3px solid red;
+  margin-left: 47%;
+  margin-right: 47%;
+  margin-top: 0;
+}
+
+.partners ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 24px;
+}
+
+.copyright {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 60px;
+  height: auto;
+}
+
+.copyright i {
+  width: 1rem;
+  font-weight: 700;
+  font-size: 30px;
+  padding-left: 1.5rem;
+}
+
+.copyright-text {
+  display: block;
+  padding-left: 2rem;
+}
+
+/* ABOUT PAGE */
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/aboutpage-bg.jpg');
+}
+
+.h1 {
+  margin-bottom: 1.5rem;
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 40px;
+  width: 60%;
+}
+
+.about-page p {
+  margin-top: 3rem;
+  margin-left: 10%;
+  margin-right: 15%;
+}
+
+.about-context {
+  padding: 1.5rem;
+  box-sizing: border-box;
+  border: 2px solid gray;
+  text-align: center;
+  line-height: 30px;
+  background-color: beige;
+  font-weight: 600;
+}
+
+.about-contacts {
+  text-align: center;
+  line-height: 30px;
+}
+
+.about-company {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-header hr {
+  margin: 0 45% 40px 45%;
+  border: 2px solid #ec5242;
+}
+
+.company-h2 {
+  color: #1a1b1b;
+  font-weight: 400;
+  text-align: center;
+}
+
+.company-header p {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-logo {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 40px;
+  display: flex;
+  border: 2px solid gray;
+  padding: 3rem;
+}
+
+.company-logo i {
+  width: 40%;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30%;
+}
+
+#past-events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#past-events h2 hr {
+  margin-left: 45%;
+  margin-right: 45%;
+  color: #ec5242;
+  margin-bottom: 40px;
+  height: 4px;
+}
+
+#past-events p {
+  padding: 2rem;
+  text-align: center;
+}
+
+.past-events {
+  color: #1a1b1b;
+  font-weight: normal;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.concert-img {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  * {
+    background-color: solid rgba(255, 253, 253, 0.808);
+  }
+
+  body {
+    height: auto;
+  }
+
+  .sm-screen {
+    display: none;
+  }
+
+  .top-nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1a1b1b;
+    margin-top: 0.7rem;
+    height: 60px;
+  }
+
+  .top-nav .nav-items {
+    color: #fff;
+    gap: 1rem;
+    margin-right: 2rem;
+  }
+
+  .partners ul li {
+    list-style: none;
+    font-size: 40px;
+  }
+
+  .top-nav .nav-items li {
+    list-style: none;
+  }
+
+  .nav-menu li:last-child {
+    border: 4px solid #ec5242;
+  }
+
+  .top-nav .nav-items li:last-child {
+    margin-right: 15px;
+  }
+
+  .bottom-nav-m {
+    display: none;
+  }
+
+  .bottom-nav {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    position: sticky;
+    background-color: #fff;
+    width: 100vw;
+    padding-left: 6rem;
+  }
+
+  .bottom-nav a i {
+    width: 1.5rem;
+    color: #1a1b1b;
+  }
+
+  .bottom-nav a i:hover {
+    color: #ec5242;
+  }
+
+  .nav-menu {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    width: 60vw;
+    margin-right: 5%;
+  }
+
+  .nav-link {
+    color: #1a1b1b;
+    font-size: 1rem;
+  }
+
+  .nav-link:hover {
+    cursor: pointer;
+    color: #ec5242;
+    transform: translateX(-10%);
+  }
+
+  .home-page {
+    width: 50%;
+    margin-left: 15%;
+  }
+
+  .concert-snippet {
+    margin-top: 1.5rem;
+  }
+
+  h4 {
+    padding-top: 1.5rem;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 15%;
+  }
+
+  .card-child {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-child:hover {
+    border: 1px solid #fff;
+  }
+
+  .cards-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards-link a {
+    color: #fff;
+    margin-bottom: 2.5rem;
+  }
+
+  .artists h5 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  /* featured artists section desktop */
+  #featured-artists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  .featured-artist {
+    display: flex;
+    height: auto;
+    position: inherit;
+  }
+
+  .artist-portfolio {
+    left: 0;
+    padding: 1.5rem;
+  }
+
+  .artist-name {
+    font-size: 1rem;
+    color: black;
+    font-family: 'COCOGOOSE', sans-serif;
+  }
+
+  .music-genre {
+    font-size: 1.5rem;
+  }
+
+  /* partners section */
+
+  .partners {
+    color: white;
+    background-color: rgba(22, 16, 16, 0.76);
+    margin: 60px 0;
+    padding-bottom: 20px;
+  }
+
+  .partners h6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 24px;
+  }
+
+  .partners hr {
+    border: 0;
+    border-top: 3px solid red;
+    margin-left: 47%;
+    margin-right: 47%;
+    margin-top: 0;
+  }
+
+  .partners ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 24px;
+  }
+
+  .concert-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
