@@ -48,7 +48,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [Microverse] (https://www.microverse.org/)
-- [Nelson Sakwa] - (https://www.behance.net/adagio07)
+- [Nelson Sakwa] (https://www.behance.net/sakwadesignstudio)
 
 ## 📝 License
 
